@@ -3,7 +3,7 @@ const submitBtn = document.getElementById("submit-btn")
 const schemeValue = document.getElementById("scheme-select").value
 const colorDiv = document.querySelectorAll('.color')
 
-submitBtn.addEventListener("click", (e) => {
+document.addEventListener("submit", (e) => {
     e.preventDefault();
     const getColor = document.querySelector("input[type='color']").value
     const schemeValue = document.getElementById("scheme-select").value
