@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <form>
+            <input class="input-color" type="color" id="input-color">
+                <select id="scheme-select" name="schemes">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome (Dark)</option>
+                    <option value="monochrome-light">Monochrome (Light)</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button class="btn" id="submit-btn">Get color scheme</button>
+                <button class="btn"  id="clear-btn">Clear palette</button>
+            </form>
+        </header>
+        <main>
+            <div class="colors-display">
+                <div class="color"></div>
+                <div class="color"></div>           
+                <div class="color"></div>
+                <div class="color"></div>      
+                <div class="color"></div>
+            </div>
+            <p class="copy-alert" id="copy-alert"></p>
+        </main>
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </body>
+</html>
